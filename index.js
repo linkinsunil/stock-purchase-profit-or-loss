@@ -7,6 +7,6 @@ const message = document.querySelector("#message")
 btnCheckStocksStatus.addEventListener("click", checkProfitAndLoss);
 
 function checkProfitAndLoss(){
-    console.log("checkProfitAndLoss")
+    
 }
 
