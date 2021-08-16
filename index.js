@@ -4,5 +4,9 @@ const currentPrice = document.querySelector(".currentPrice")
 const btnCheckStocksStatus = document.querySelector("#btn-checkStocksStatus")
 const message = document.querySelector("#message")
 
-console.log(btnCheckStocksStatus)
+btnCheckStocksStatus.addEventListener("click", checkProfitAndLoss);
+
+function checkProfitAndLoss(){
+    console.log("checkProfitAndLoss")
+}
 
