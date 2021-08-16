@@ -5,3 +5,4 @@ const btnCheckStocksStatus = document.querySelector("#btn-checkStocksStatus")
 const message = document.querySelector("#message")
 
 console.log(btnCheckStocksStatus)
+
