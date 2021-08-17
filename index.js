@@ -18,22 +18,28 @@ function checkProfitAndLoss(){
             const profitPercentage = ( totalProfit / totalInitialPrice ) * 100;
 
             if (totalProfit > 0 ) {
-                message.innerText = `Congratulations! Your profit is of ₹ ${totalProfit} and profit percent is ${profitPercentage}% 💹`;
+                displayMsg("green", `Congratulations! Your profit is of ₹ ${totalProfit} and profit percent is ${profitPercentage}% 💹`);
             } else if (totalProfit < 0 ) {
-                message.innerText = `Sorry! Your loss is of ₹ ${totalProfit} and loss percent is ${profitPercentage}% 🔻`;
+                displayMsg("red", `Sorry! Your loss is of ₹ ${totalProfit} and loss percent is ${profitPercentage}% 🔻`);
             } else {
                 message.innerText = `Your stocks performance is stagnant i.e, No Profit No Loss`;
             }
             
         } else {
-            message.innerText = "Invalid Input. All Inputs must be positive ⚠.";
+            displayMsg("red", "Invalid Input. All Inputs must be positive ⚠.");
         }  
 
     } else {
-        message.innerText = "Please enter all the fields ⚠";
+        displayMsg("red", "Enter all the fields ⚠");
     }
 
 
+}
+
+function displayMsg(color, msg){
+    message.style.color = color
+    message.style.backgroundColor = "white";
+    message.innerText = msg;
 }
 
 function product(a,b){
