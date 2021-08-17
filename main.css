@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     max-width: 30vw;
+    margin: auto;
 }
 
 input{
