@@ -5,6 +5,7 @@
     flex-direction: column;
     max-width: 30vw;
     margin: auto;
+    font-family: 'Montserrat', sans-serif;
 }
 
 input{
