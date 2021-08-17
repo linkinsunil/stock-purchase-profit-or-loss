@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+:root {
+    --primary-dark : #0C4A6E;
+    --primary-light: #5EEAD4;
+}
+
+body{
+    color: var(--primary-light);
+    background-color: var(--primary-dark);
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -9,16 +19,22 @@
 }
 
 input{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     padding: .5rem;
 }
 
 button{
     padding:0.5rem;
+    background-color: var(--primary-light);
+    border: none;
+    border-radius: .2rem;
+    font-size: larger;
+    font-weight: bold;
 }
 #message{
-    margin-top: 1rem;
+    margin-top: 2rem;
     text-align: center;
     font-size: large;
     font-weight: bold;
+    border: none;
 }
