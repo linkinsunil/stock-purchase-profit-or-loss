@@ -16,13 +16,21 @@ function checkProfitAndLoss(){
         if (initialPrice.value > 0 && stocksQuantity.value > 0 && currentPrice.value > 0){
             const totalProfit = totalCurrentPrice - totalInitialPrice;
             const profitPercentage = ( totalProfit / totalInitialPrice ) * 100;
-            message.innerText = `Your profit is Rs ${totalProfit} and profit percent is ${profitPercentage}`;
+
+            if (totalProfit > 0 ) {
+                message.innerText = `Congratulations! Your profit is of ₹ ${totalProfit} and profit percent is ${profitPercentage}% 💹`;
+            } else if (totalProfit < 0 ) {
+                message.innerText = `Sorry! Your loss is of ₹ ${totalProfit} and loss percent is ${profitPercentage}% 🔻`;
+            } else {
+                message.innerText = `Your stocks performance is stagnant i.e, No Profit No Loss`;
+            }
+            
         } else {
-            message.innerText = "Invalid Input. All Inputs must be positive.";
+            message.innerText = "Invalid Input. All Inputs must be positive ⚠.";
         }  
 
     } else {
-        message.innerText = "Please enter all the fields";
+        message.innerText = "Please enter all the fields ⚠";
     }
 
 
