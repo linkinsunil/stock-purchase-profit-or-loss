@@ -18,9 +18,9 @@ function checkProfitAndLoss(){
             const profitPercentage = ( totalProfit / totalInitialPrice ) * 100;
 
             if (totalProfit > 0 ) {
-                displayMsg("green", `Congratulations! Your profit is of ₹ ${totalProfit} and profit percent is ${profitPercentage}% 💹`);
+                displayMsg("green", `Congratulations! Your profit is of ₹ ${totalProfit.toFixed(2)} and profit percent is ${profitPercentage.toFixed(2)}% 💹`);
             } else if (totalProfit < 0 ) {
-                displayMsg("red", `Sorry! Your loss is of ₹ ${totalProfit} and loss percent is ${profitPercentage}% 🔻`);
+                displayMsg("red", `Sorry! Your loss is of ₹ ${totalProfit.toFixed(2)} and loss percent is ${profitPercentage.toFixed(2)}% 🔻`);
             } else {
                 message.innerText = `Your stocks performance is stagnant i.e, No Profit No Loss`;
             }
