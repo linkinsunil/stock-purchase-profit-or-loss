@@ -30,6 +30,7 @@ button{
     padding:.5rem 1rem;
     width: 100%;
     background-color: var(--primary-light);
+    color: var(--primary-dark);
     border: none;
     border-radius: .2rem;
     font-size: larger;
