@@ -28,12 +28,12 @@ input{
 
 button{
     padding:.5rem 1rem;
+    width: 100%;
     background-color: var(--primary-light);
     border: none;
     border-radius: .2rem;
     font-size: larger;
     font-weight: bold;
-    width: 100%;
 }
 #message{
     margin-top: 2rem;
@@ -41,4 +41,6 @@ button{
     font-size: large;
     font-weight: bold;
     border: none;
+    padding: .5rem 1rem;
+    width: 100%;
 }
